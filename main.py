@@ -20,7 +20,7 @@ async def main(request: Request):
             "Content-Type": "application/json",
         },
         json={
-            "model": "meta-llama/llama-3.3-70b-instruct:free",
+            "model": "openrouter/free",
             "messages": [{"role": "user", "content": user_text}],
         },
         timeout=4,
