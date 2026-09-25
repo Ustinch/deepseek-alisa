@@ -20,7 +20,7 @@ async def main(request: Request):
             "Content-Type": "application/json",
         },
         json={
-            "model": "openrouter/free",
+            "model": "google/gemini-2.0-flash-exp:free",
             "messages": [{"role": "user", "content": user_text}],
         },
         timeout=4,
